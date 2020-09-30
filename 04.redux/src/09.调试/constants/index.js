@@ -1,0 +1,5 @@
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT = 'DECREMENT'
+export const ADD_USER = 'ADD_USER'
+export const ADD_USER_LOAD  = 'ADD_USER_LOAD'
+export const ADD_USER_ERR = 'ADD_USER_ERR'

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script type="text/babel">
+  const vDom = React.createElement('h2', {id: 'test'},'vDom')
+  console.log( React.Component)
+    class MyBox extends React.Component {
+      constructor() {
+        super()
+        this.state = {
+          name: '哈哈'
+        }
+      }
+      clickFn() {
+        console.log(this)
+      }
+      render() {
+        return (
+          <div onClick={() => this.clickFn()}>组件{vDom}</div>
+        )
+      }
+    }
+    ReactDOM.render(<MyBox></MyBox>, document.getElementById('app'))
+  </script>
+</body>
+
+</html>
